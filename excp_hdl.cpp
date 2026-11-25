@@ -3,7 +3,10 @@ using namespace std;
 
 int main()
 {
-    int a = 10, b = 0;
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
 
     try
     {
@@ -12,12 +15,12 @@ int main()
             throw b;
         }
 
-        cout << a / b;
+        cout << "Division = " << a / b;
     }
 
     catch(int x)
     {
-        cout << "Error: Division by zero";
+        cout << "Exception: Cannot divide by zero";
     }
 
     return 0;
